@@ -1,4 +1,4 @@
-name: CI
+name: homecare-ci
 
 on:
   push:
