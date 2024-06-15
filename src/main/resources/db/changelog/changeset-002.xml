@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="2" author="sardor">
+        <insert tableName="home_service">
+            <column name="name" value="Уход за домом"/>
+            <column name="description" value="Услуги по уборке и уходу за домом"/>
+        </insert>
+        <insert tableName="home_service">
+            <column name="name" value="Уход за растениями"/>
+            <column name="description" value="Полив и уход за растениями"/>
+        </insert>
+        <insert tableName="home_service">
+            <column name="name" value="Услуги прачечной"/>
+            <column name="description" value="Стирка и глажка белья"/>
+        </insert>
+        <insert tableName="home_service">
+            <column name="name" value="Услуги по уходу за садом"/>
+            <column name="description" value="Стрижка газона и уход за садом"/>
+        </insert>
+
+        <insert tableName="specialist">
+            <column name="name" value="Иван Иванов"/>
+            <column name="photo_url" value="/images/ivan.jpg"/>
+            <column name="rating" valueNumeric="4.5"/>
+        </insert>
+        <insert tableName="specialist">
+            <column name="name" value="Анна Смирнова"/>
+            <column name="photo_url" value="/images/anna.jpg"/>
+            <column name="rating" valueNumeric="4.7"/>
+        </insert>
+        <insert tableName="feedback">
+            <column name="user_name" value="Анна"/>
+            <column name="comment" value="Кринж полный!"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
